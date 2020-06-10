@@ -13,6 +13,7 @@ public class verify {
 		driver.findElement(By.linkText("https://github.com/edureka-devops/projCert.git")).click();
 		driver.manage().window().maximize();
 		driver.findElement(By.linkText("About")).click();
+
 	}
 
 }
