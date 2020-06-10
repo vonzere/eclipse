@@ -9,12 +9,11 @@ public class verify {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
-		driver.get("https://website.com/sign-in");
+		driver.get("https://www.google.com/url?q=https://github.com/edureka-devops/projCert.git&sa=D&source=hangouts&ust=1529594204947000&usg=AFQjCNHLi_-tQcahU0SXmK-dbQu3oSMTqQ");
+		driver.findElement(By.linkText("https://github.com/edureka-devops/projCert.git")).click();
 		driver.manage().window().maximize();
-		String x = driver.getTitle();
-		System.out.println(x);
-		driver.findElement(By.id("username")).sendKeys("selenium");
-		driver.findElement(By.name("password")).sendKeys("test");
+		driver.findElement(By.linkText("About")).click();
+		
 		
 			
 
