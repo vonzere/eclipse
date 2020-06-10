@@ -14,6 +14,7 @@ public class verify {
 		driver.manage().window().maximize();
 		driver.findElement(By.linkText("About")).click();
 
+		
 	}
 
 }
